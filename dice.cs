@@ -1,8 +1,7 @@
-﻿using oopconcepts;
-using System;
+﻿using System;
 namespace OopConcepts
 {
-    public class Dice : GeometricShape
+    public class Dice : GeometricShape, IObject
     {
         public int Size {  get; set; }
         public string Colour {  get; set; }
@@ -23,9 +22,13 @@ namespace OopConcepts
             Random random = new Random();
             Console.WriteLine(random.Next(1, Faces+1));
         }
-        public override void RotateShape()
+        public void Rotate()
         {
-            Console.WriteLine("Rotating");
+            Console.WriteLine("Rotating Dice");
+        }
+        public void Fall()
+        {
+            Console.WriteLine("Dice Falling");
         }
         public override void ShowInfo()
         {

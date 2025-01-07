@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace oopconcepts
+namespace OopConcepts
 {
     public abstract class GeometricShape
     {
@@ -14,7 +10,6 @@ namespace oopconcepts
             Name = name;
             Faces = faces;
         }
-        public abstract void RotateShape();
         public abstract void ShowInfo();
     }
     

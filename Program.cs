@@ -1,5 +1,4 @@
-﻿using oopconcepts;
-using System;
+﻿using System;
 namespace OopConcepts
 {
     public class Program
@@ -14,6 +13,8 @@ namespace OopConcepts
             dice1.Throw();
             dice2.Throw();
             dice2.Throw();
+            dice1.Rotate();
+            dice2.Fall();
         }
     }
 }
