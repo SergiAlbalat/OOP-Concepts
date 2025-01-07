@@ -1,10 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OopConcepts.Dice">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+    <Position X="10.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAIAAAAAAgAAAAAAAAAAEAAAAAAAAAQAAABAAAAA=</HashCode>
+      <HashCode>AEAAAAAAAAAAgAAABAAAAAAEAAAAAAAAAQAAABAQAAA=</HashCode>
       <FileName>dice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oopconcepts.GeometricShape">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>GeometricShape.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

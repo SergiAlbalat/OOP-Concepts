@@ -1,25 +1,35 @@
-﻿using System;
+﻿using oopconcepts;
+using System;
 namespace OopConcepts
 {
-    public class Dice
+    public class Dice : GeometricShape
     {
-        public int Faces {  get; set; }
         public int Size {  get; set; }
         public string Colour {  get; set; }
         public string Material {  get; set; }
         public static int DiceCount = 0;
-        public Dice(int faces, int size, string colour, string material)
+        public Dice(string name, int faces, int size, string colour, string material) : base(name, faces)
         {
-            Faces = faces;
             Size = size;
             Colour = colour;
             Material = material;
             DiceCount++;
         }
+        public Dice() : this("Dice", 6, 3, "white", "plastic") { }
+        public Dice(int faces, string colour, string material) : this("Dice", faces, 3, colour, material) { }
+        public Dice(int faces) : this("Dice", faces, 3, "white", "plastic") { }
         public void Throw()
         {
             Random random = new Random();
             Console.WriteLine(random.Next(1, Faces+1));
+        }
+        public override void RotateShape()
+        {
+            Console.WriteLine("Rotating");
+        }
+        public override void ShowInfo()
+        {
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}", Name, Faces, Size, Colour, Material);
         }
     }
 }
